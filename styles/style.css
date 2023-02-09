@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato:wght@300&display=swap');
+:root {
+    --primary-color: #79589f;
+    --secondary-color: #6e5baa;
+    --dark-color: #260040;
+    --light-color: #f4f4f4;
+    --box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    --text-color: #333;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    list-style: 1.6;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+p {
+    margin: 10px 0;
+}
+img {
+    width: 100%;
+}
+
+
+
+
+
+/*NAVBAR  */
+.navbar {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    height: 70px;
+}
+.navbar .flex {
+    justify-content: space-between;
+
+}
+.navbar ul {
+    display: flex;
+}
+.navbar a {
+    color: var(--light-color);
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover {
+    border-bottom: 2px solid var(--light-color) ;
+}
+/*Showcase */
+.showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    position: relative;
+}
+.showcase h1 {
+    font-size: 40px;
+}
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase .grid {
+    grid-template-columns: 55% 45%;
+}
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+}
+.showcase-form .form-control {
+    margin: 30px 0;
+}
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+border: 0;
+border-bottom: 2px solid var(--dark-color);
+width: 100%;
+padding: 3px;
+font-size: 1.1rem;
+}
+
+.showcase-form input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.showcase::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    bottom: -70px;
+    background-color: #fff;
+    right: 0;
+    left: 0;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+
+}
+/* Stats */
+.stats {
+    margin-top: 100px;
+}
+.stats-heading {
+   max-width: 500px;
+   margin: auto; 
+}
