@@ -1,3 +1,5 @@
+
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -22,7 +24,7 @@
 .card {
     background-color: var(--light-color);
     border-radius: 10px;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--shadow);
     padding: 20px;
     margin: 10px;
     color: var(--text-color);
@@ -46,7 +48,7 @@
 .btn:hover {
     transform: scale(0.95);
 }
-
+    /* margin */
 .my-1 {
     margin: 1rem 0;
 }
@@ -101,3 +103,32 @@ padding: 1rem 0;
 .text-seconday {
     font-size: 20px;
 }
+
+.bg-primary, .btn-primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.bg-secondary, .btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+.bg-dark, .btn-dark {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.bg-light, .btn-light {
+    background-color: var(--ligth-color);
+    color: #333;
+}
+.bg-primary a, .btn-primary a,
+.bg-secondary a, .btn-secondary a,
+.bg-dark a, .btn-dark a
+{
+    color: #fff;
+}
+
+.bg-light a, .btn-light a {
+    color: #333;
+}
+
