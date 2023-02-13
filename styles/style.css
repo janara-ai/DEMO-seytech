@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato:wght@300&display=swap');
+
+
+
+
 :root {
     --primary-color: #79589f;
     --secondary-color: #6e5baa;
     --dark-color: #260040;
     --light-color: #f4f4f4;
-    --box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    --shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     --text-color: #333;
+    --succes-color: #5cb85c;
+    --error-color: #d9534f;
 }
+
 
 
 
@@ -21,7 +28,7 @@ body {
     list-style: 1.6;
 }
 ul {
-    list-style: none;
+    list-style-type: none;
 }
 a {
     color: var(--text-color);
@@ -37,6 +44,12 @@ p {
 }
 img {
     width: 100%;
+   
+}
+code, pre {
+    background-color: var(--text-color);
+    background-color: #fff;
+    padding: 10px;
 }
 
 
@@ -128,3 +141,91 @@ font-size: 1.1rem;
    max-width: 500px;
    margin: auto; 
 }
+.stats .grid h3 {
+    font-size: 35px;
+
+}
+/* cli */
+.cli .grid {
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+}
+.cli .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+.languages .flex {
+   flex-wrap: wrap; 
+}
+.languages .card {
+    text-align: center;
+    transition: transform 0.2s ease-in;
+   
+}
+.languages .card:hover {
+    transform: translateY(-15px);
+   
+}
+.languages h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/*.footer  */
+.footer .social a {
+margin: 0 10px;
+}
+/* tablet */
+@media screen and (max-width: 768px) {
+    .grid, .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .showcase .grid {
+        gap: 0;
+    }
+    .showcase {
+        height: auto;
+    }
+    .showcase-text {
+       text-align: center;
+    }
+    .card {
+       justify-self: center;
+       margin: auto;
+    
+    }
+    .cli .grid > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+/* MOBILE */
+@media screen and (max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+
+
+
